@@ -1,0 +1,48 @@
+--- avant.html	2026-10-23 17:57:58.364236602 +0000
++++ apres.html	2026-10-23 17:58:07.099388890 +0000
+@@ -10248,6 +10248,19 @@
+ 
+ /* ---------- Scène ---------- */
+ const Scenes = { current: null };
++/* v28 (correctif) : sprite du portail de Justine fabriqué à la demande. Il n'était créé que dans setupPortailJustine ;
++   la sortie de l'arène après la victoire le réutilisait sans garantie et drawProp plantait (img indéfinie). */
++function spritePortailJ() {
++  if (!SPR_WORLD.prop.portailJ) {
++    const c = newCanvas(30, 40), g = c.getContext('2d');
++    const P = (a, b, w, h, col) => { g.fillStyle = col; g.fillRect(a, b, w, h); };
++    P(2, 6, 26, 34, '#07080b'); P(4, 8, 22, 32, '#2a2634'); P(7, 11, 16, 29, '#120a18');
++    for (let i = 0; i < 9; i++) P(9 + (i * 5) % 12, 13 + i * 3, 2, 1, i % 2 ? '#6a4aa8' : '#c8344a');
++    P(4, 8, 2, 32, '#4a4458'); P(1, 4, 28, 4, '#07080b'); P(3, 5, 24, 2, '#4a4458');
++    SPR_WORLD.prop.portailJ = c;
++  }
++  return SPR_WORLD.prop.portailJ;
++}
+ Scenes.donjon = {
+   timers: [], room: null, node: null, waves: 0, wavesLeft: 0, spawnT: 0, inSecret: false, ambient: [], exitLock: false,
+   later(d, fn) { this.timers.push({ t: d, fn }); },
+@@ -10357,15 +10370,7 @@
+     const s = Game.state, run = s.run, J = s.jc;
+     if (run.region !== 'domaine' || !jcActif(s) || !J || !J.skinEnzo || J.justine) return;
+     const R = this.room.repere, x = R.x + 64, y = R.y + 18;
+-    if (!SPR_WORLD.prop.portailJ) {
+-      const c = newCanvas(30, 40), g = c.getContext('2d');
+-      const P = (a, b, w, h, col) => { g.fillStyle = col; g.fillRect(a, b, w, h); };
+-      P(2, 6, 26, 34, '#07080b'); P(4, 8, 22, 32, '#2a2634'); P(7, 11, 16, 29, '#120a18');
+-      for (let i = 0; i < 9; i++) P(9 + (i * 5) % 12, 13 + i * 3, 2, 1, i % 2 ? '#6a4aa8' : '#c8344a');
+-      P(4, 8, 2, 32, '#4a4458'); P(1, 4, 28, 4, '#07080b'); P(3, 5, 24, 2, '#4a4458');
+-      SPR_WORLD.prop.portailJ = c;
+-    }
+-    W.props.push({ x, y, img: SPR_WORLD.prop.portailJ });
++    W.props.push({ x, y, img: spritePortailJ() });
+     W.interactables.push({ x, y: y + 2, r: 22, label: 'Un portail effacé', action: () => {
+       const comp = compagnonAdepte(s);
+       if (!comp || comp.jc !== 'enzo') { UI.dialog({ nom: 'Portail effacé', texte: 'Des fils rouges sortent de la pierre et se rétractent quand vous approchez. Le portail attend quelqu’un. « Il faut y venir avec Enzo, à son vrai visage. »', choix: [{ label: 'Revenir plus tard' }] }); return; }
+@@ -10417,7 +10422,7 @@
+         UI.dialog({ nom: 'Récompenses', texte: `+10 cristaux, +6 essences, +60 oboles, +${xp} braises d’expérience, deux Braises d’Ancien.\n\nPouvoir : J — Justine.\n\nAu fond de l’arène, le portail s’est rallumé.`, choix: [{ label: 'Poursuivre', action: () => {
+           W.cinematic = false; Sfx.playMusic('exploration'); checkSucces(); this.snapshotRun();
+           const px = W.map.w * TILE / 2, py = (W.map.h - 3) * TILE;
+-          W.props.push({ x: px, y: py, img: SPR_WORLD.prop.portailJ });
++          W.props.push({ x: px, y: py, img: spritePortailJ() });
+           W.interactables.push({ x: px, y: py + 2, r: 22, label: 'Quitter le portail', action: () => this.quitterJustine() });
+         } }] });
+       } }] });
