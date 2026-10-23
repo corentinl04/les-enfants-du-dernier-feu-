@@ -1,2 +1,4 @@
 # Copies exactes : aucune conversion de fin de ligne, aucun diff textuel
 archives/artefact/*.html -text -diff
+instantanes/*.html -text -diff
+source/index.html -text

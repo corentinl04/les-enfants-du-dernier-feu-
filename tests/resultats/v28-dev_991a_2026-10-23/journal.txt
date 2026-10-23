@@ -1,0 +1,16 @@
+T1 réussi Non-régression : titre, partie, sanctuaire, 5 régions, sauvegarde, code de transfert
+T2 réussi Animations d’attaque v28 (poses dessinées)
+T3 réussi Compteurs économiques (s.eco)
+T4-racine réussi Boss racine : apparition, 30 s de combat simulé, phases, défaite
+T4-chasseur réussi Boss chasseur : apparition, 30 s de combat simulé, phases, défaite
+T4-ossu réussi Boss ossu : apparition, 30 s de combat simulé, phases, défaite
+T4-cendre réussi Boss cendre : apparition, 30 s de combat simulé, phases, défaite
+T4-myco réussi Boss myco : apparition, 30 s de combat simulé, phases, défaite
+T4-abbesse réussi Boss abbesse : apparition, 30 s de combat simulé, phases, défaite
+T4-eteignoir réussi Boss eteignoir : apparition, 30 s de combat simulé, phases, défaite
+T4-engloutie réussi Boss engloutie : apparition, 30 s de combat simulé, phases, défaite
+T4-justine réussi Boss justine : apparition, 30 s de combat simulé, phases, défaite
+T5 réussi Sauvegarde créée avec l’archive 8a67 chargée dans la v28
+T6 réussi Performance indicative : v28 contre 8a67, processeur ralenti ×4
+T7 réussi Panneaux et fonctions existants (menus, forge, journal, adeptes…)
+BILAN T1:réussi T2:réussi T3:réussi T4-racine:réussi T4-chasseur:réussi T4-ossu:réussi T4-cendre:réussi T4-myco:réussi T4-abbesse:réussi T4-eteignoir:réussi T4-engloutie:réussi T4-justine:réussi T5:réussi T6:réussi T7:réussi

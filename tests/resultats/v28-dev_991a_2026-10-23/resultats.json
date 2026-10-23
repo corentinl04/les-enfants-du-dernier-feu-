@@ -1,0 +1,1126 @@
+{
+ "cible": "v28-dev_1792772751-991a.html",
+ "reference": "artifact-3544c795-1792760227-8a67.html",
+ "date": "2026-10-23T17:21:01.736Z",
+ "tests": [
+  {
+   "id": "T1",
+   "nom": "Non-régression : titre, partie, sanctuaire, 5 régions, sauvegarde, code de transfert",
+   "execute": true,
+   "resultat": "réussi",
+   "details": {
+    "regions": {
+     "foret": {
+      "scene": "donjon",
+      "erreurs": 0
+     },
+     "catacombes": {
+      "scene": "donjon",
+      "erreurs": 0
+     },
+     "fongique": {
+      "scene": "donjon",
+      "erreurs": 0
+     },
+     "domaine": {
+      "scene": "donjon",
+      "erreurs": 0
+     },
+     "lac": {
+      "scene": "donjon",
+      "erreurs": 0
+     }
+    },
+    "sauvegarde": {
+     "imp": true,
+     "ld": true,
+     "identique": true
+    },
+    "erreurs": []
+   },
+   "limites": "Expéditions de 4 s avec commandes simulées ; ne vérifie ni la progression complète d’une expédition ni le rendu visuel."
+  },
+  {
+   "id": "T2",
+   "nom": "Animations d’attaque v28 (poses dessinées)",
+   "execute": true,
+   "resultat": "réussi",
+   "details": {
+    "couverture": {
+     "classesAvecPoses": [
+      "chevalier"
+     ],
+     "gestes": {
+      "chevalier": {
+       "leger": {
+        "side": [
+         "prep",
+         "frappe",
+         "recup"
+        ],
+        "down": [
+         "prep",
+         "frappe",
+         "frappe2",
+         "recup"
+        ],
+        "up": [
+         "prep",
+         "frappe",
+         "frappe2",
+         "recup"
+        ]
+       },
+       "lourd": {
+        "side": [
+         "prep",
+         "frappe",
+         "recup"
+        ],
+        "down": [
+         "prep",
+         "frappe",
+         "recup"
+        ],
+        "up": [
+         "prep",
+         "frappe",
+         "recup"
+        ]
+       }
+      }
+     },
+     "armes": {
+      "dague": "dagues",
+      "lame": "epee",
+      "marteau": "masse",
+      "fronde": "fronde",
+      "faux": "faux",
+      "griffes": "griffes",
+      "encensoir": "fleau",
+      "grandeEpee": "espadon",
+      "hache": "hache",
+      "lance": "lance",
+      "consumee": "consumee",
+      "grimoire": "grimoire",
+      "arc": "arc",
+      "gants": "poings",
+      "mainNue": "mainNue",
+      "septTrefle": "carte",
+      "javelot": "javelot",
+      "leDeux": "deux"
+     }
+    },
+    "imagesDePosesSondees": 60,
+    "chevalier": [
+     {
+      "arme": "dague",
+      "dir": "down",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "dague",
+      "dir": "up",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "dague",
+      "dir": "side",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "lame",
+      "dir": "down",
+      "attaqueObservee": true,
+      "posesAttendues": true,
+      "phasesV28": {
+       "prep": 8,
+       "frappe": 10,
+       "recup": 14
+      },
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "lame",
+      "dir": "up",
+      "attaqueObservee": true,
+      "posesAttendues": true,
+      "phasesV28": {
+       "prep": 4,
+       "frappe": 5,
+       "recup": 7
+      },
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "lame",
+      "dir": "side",
+      "attaqueObservee": true,
+      "posesAttendues": true,
+      "phasesV28": {
+       "prep": 8,
+       "frappe": 5,
+       "recup": 14
+      },
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "marteau",
+      "dir": "down",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "marteau",
+      "dir": "up",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "marteau",
+      "dir": "side",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "fronde",
+      "dir": "down",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "fronde",
+      "dir": "up",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "fronde",
+      "dir": "side",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "faux",
+      "dir": "down",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "faux",
+      "dir": "up",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "faux",
+      "dir": "side",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "griffes",
+      "dir": "down",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "griffes",
+      "dir": "up",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "griffes",
+      "dir": "side",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "encensoir",
+      "dir": "down",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "encensoir",
+      "dir": "up",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "encensoir",
+      "dir": "side",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "grandeEpee",
+      "dir": "down",
+      "attaqueObservee": true,
+      "posesAttendues": true,
+      "phasesV28": {
+       "recup": 40,
+       "prep": 34,
+       "frappe": 22
+      },
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "grandeEpee",
+      "dir": "up",
+      "attaqueObservee": true,
+      "posesAttendues": true,
+      "phasesV28": {
+       "recup": 20,
+       "prep": 17,
+       "frappe": 11
+      },
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "grandeEpee",
+      "dir": "side",
+      "attaqueObservee": true,
+      "posesAttendues": true,
+      "phasesV28": {
+       "recup": 40,
+       "prep": 34,
+       "frappe": 22
+      },
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "hache",
+      "dir": "down",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "hache",
+      "dir": "up",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "hache",
+      "dir": "side",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "lance",
+      "dir": "down",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "lance",
+      "dir": "up",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "lance",
+      "dir": "side",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "consumee",
+      "dir": "down",
+      "attaqueObservee": true,
+      "posesAttendues": true,
+      "phasesV28": {
+       "prep": 10,
+       "frappe": 12,
+       "recup": 16
+      },
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "consumee",
+      "dir": "up",
+      "attaqueObservee": true,
+      "posesAttendues": true,
+      "phasesV28": {
+       "prep": 5,
+       "frappe": 6,
+       "recup": 8
+      },
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "consumee",
+      "dir": "side",
+      "attaqueObservee": true,
+      "posesAttendues": true,
+      "phasesV28": {
+       "prep": 10,
+       "frappe": 6,
+       "recup": 16
+      },
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "grimoire",
+      "dir": "down",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "grimoire",
+      "dir": "up",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "grimoire",
+      "dir": "side",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "arc",
+      "dir": "down",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "arc",
+      "dir": "up",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "arc",
+      "dir": "side",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "gants",
+      "dir": "down",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "gants",
+      "dir": "up",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "gants",
+      "dir": "side",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "mainNue",
+      "dir": "down",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "mainNue",
+      "dir": "up",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "mainNue",
+      "dir": "side",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "septTrefle",
+      "dir": "down",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "septTrefle",
+      "dir": "up",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "septTrefle",
+      "dir": "side",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "javelot",
+      "dir": "down",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "javelot",
+      "dir": "up",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "javelot",
+      "dir": "side",
+      "attaqueObservee": true,
+      "posesAttendues": false,
+      "phasesV28": {},
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "leDeux",
+      "dir": "down",
+      "attaqueObservee": true,
+      "posesAttendues": true,
+      "phasesV28": {
+       "prep": 6,
+       "frappe": 12,
+       "recup": 16
+      },
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "leDeux",
+      "dir": "up",
+      "attaqueObservee": true,
+      "posesAttendues": true,
+      "phasesV28": {
+       "prep": 3,
+       "frappe": 6,
+       "recup": 8
+      },
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     },
+     {
+      "arme": "leDeux",
+      "dir": "side",
+      "attaqueObservee": true,
+      "posesAttendues": true,
+      "phasesV28": {
+       "prep": 6,
+       "frappe": 6,
+       "recup": 16
+      },
+      "affichagesPosesAncienne": 0,
+      "conforme": true
+     }
+    ],
+    "nonConformes": [],
+    "autresClasses": {
+     "assassin": {
+      "erreurs": 0
+     },
+     "mage": {
+      "erreurs": 0
+     },
+     "berserker": {
+      "erreurs": 0
+     }
+    },
+    "erreurs": []
+   },
+   "limites": "Mesure directe : affichages des images de poses par phase (prep/frappe/recup) pendant une attaque à vitesse normale (sonde sur drawImage, jusqu’à 3 essais), pour chaque arme et direction, réglages v28 et « ancienne ». Vérifie l’usage des poses et l’absence d’erreur, PAS leur qualité visuelle (captures T2_*.png à examiner) ni le ressenti. NE JUGE PAS la qualité visuelle (captures à examiner par un humain). Une différence d’image peut aussi venir d’éléments animés du décor."
+  },
+  {
+   "id": "T3",
+   "nom": "Compteurs économiques (s.eco)",
+   "execute": true,
+   "resultat": "réussi",
+   "details": {
+    "ecoInitial": null,
+    "gain": {
+     "rendu": 7,
+     "enregistre": 7,
+     "resDelta": 7
+    },
+    "plafond": {
+     "gagne": 53,
+     "perdu": 99947,
+     "attenduPerdu": 99947
+    },
+    "construction": {
+     "construit": {
+      "type": "quartiers",
+      "tx": 12,
+      "ty": 10
+     },
+     "depenseConstruction": {
+      "bois": 14
+     },
+     "change": true
+    },
+    "adeptes": {
+     "depenseNourriture": {
+      "repas": 4
+     }
+    },
+    "persistance": true,
+    "panneauStats": {
+     "ouvert": true,
+     "erreurs": 0,
+     "extrait": "Statistiques\n×\nPARCOURS\nTemps de jeu effectif\n0 min\nMorts\n0\nAbandons d’expédition\n0\nExpéditions\n0\n\nLe temps ne compte que le jeu actif : ni les menus, ni la pause, ni le jeu fermé ou en arrière-plan.\n\nGARDIENS DE RÉGION : 0/5\nLa Mère-Racine (Forêt des Racines)\n—\nLe Gardien Ossu (Catacombes du Temple"
+    },
+    "erreurs": []
+   },
+   "limites": "Couvre gain, plafond, construction, repas des adeptes, persistance et panneau. Ne vérifie pas toutes les catégories ni l’exactitude comptable sur une longue partie."
+  },
+  {
+   "id": "T4-racine",
+   "nom": "Boss racine : apparition, 30 s de combat simulé, phases, défaite",
+   "execute": true,
+   "resultat": "réussi",
+   "details": {
+    "apparu": {
+     "id": "racine",
+     "hp": 520,
+     "hpMax": 520,
+     "etat": "intro"
+    },
+    "etatsObserves": [
+     "combat"
+    ],
+    "attaquesObservees": [
+     "frappe",
+     "graines",
+     "racines",
+     "pousses",
+     "bulbes"
+    ],
+    "phaseMax": 2,
+    "fin": {
+     "mort": true,
+     "scene": "donjon"
+    },
+    "erreurs": []
+   },
+   "limites": "Combat SIMULÉ : déplacements/attaques automatisés, soins forcés, serviteurs abattus puis PV du boss retirés par le test (via damageEnemy, sans contourner l’invulnérabilité) pour atteindre les phases puis la défaite. Vérifie l’absence d’erreur et le déroulement, PAS la difficulté, la lisibilité ni l’équilibrage. Salle obtenue en remplaçant la salle courante, sans parcourir l’expédition."
+  },
+  {
+   "id": "T4-chasseur",
+   "nom": "Boss chasseur : apparition, 30 s de combat simulé, phases, défaite",
+   "execute": true,
+   "resultat": "réussi",
+   "details": {
+    "apparu": {
+     "id": "chasseur",
+     "hp": 640,
+     "hpMax": 640,
+     "etat": "intro"
+    },
+    "etatsObserves": [
+     "combat"
+    ],
+    "attaquesObservees": [
+     "volee",
+     "tir",
+     "bond",
+     "meute"
+    ],
+    "phaseMax": 3,
+    "fin": {
+     "mort": true,
+     "scene": "donjon"
+    },
+    "erreurs": []
+   },
+   "limites": "Combat SIMULÉ : déplacements/attaques automatisés, soins forcés, serviteurs abattus puis PV du boss retirés par le test (via damageEnemy, sans contourner l’invulnérabilité) pour atteindre les phases puis la défaite. Vérifie l’absence d’erreur et le déroulement, PAS la difficulté, la lisibilité ni l’équilibrage. Salle obtenue en remplaçant la salle courante, sans parcourir l’expédition."
+  },
+  {
+   "id": "T4-ossu",
+   "nom": "Boss ossu : apparition, 30 s de combat simulé, phases, défaite",
+   "execute": true,
+   "resultat": "réussi",
+   "details": {
+    "apparu": {
+     "id": "ossu",
+     "hp": 700,
+     "hpMax": 700,
+     "etat": "intro"
+    },
+    "etatsObserves": [
+     "combat"
+    ],
+    "attaquesObservees": [
+     "glas",
+     "charge",
+     "fauche",
+     "anneau",
+     "ossuaire"
+    ],
+    "phaseMax": 2,
+    "fin": {
+     "mort": true,
+     "scene": "donjon"
+    },
+    "erreurs": []
+   },
+   "limites": "Combat SIMULÉ : déplacements/attaques automatisés, soins forcés, serviteurs abattus puis PV du boss retirés par le test (via damageEnemy, sans contourner l’invulnérabilité) pour atteindre les phases puis la défaite. Vérifie l’absence d’erreur et le déroulement, PAS la difficulté, la lisibilité ni l’équilibrage. Salle obtenue en remplaçant la salle courante, sans parcourir l’expédition."
+  },
+  {
+   "id": "T4-cendre",
+   "nom": "Boss cendre : apparition, 30 s de combat simulé, phases, défaite",
+   "execute": true,
+   "resultat": "réussi",
+   "details": {
+    "apparu": {
+     "id": "cendre",
+     "hp": 820,
+     "hpMax": 820,
+     "etat": "intro"
+    },
+    "etatsObserves": [
+     "combat"
+    ],
+    "attaquesObservees": [
+     "braises",
+     "taille",
+     "fente",
+     "purge"
+    ],
+    "phaseMax": 3,
+    "fin": {
+     "mort": true,
+     "scene": "donjon"
+    },
+    "erreurs": []
+   },
+   "limites": "Combat SIMULÉ : déplacements/attaques automatisés, soins forcés, serviteurs abattus puis PV du boss retirés par le test (via damageEnemy, sans contourner l’invulnérabilité) pour atteindre les phases puis la défaite. Vérifie l’absence d’erreur et le déroulement, PAS la difficulté, la lisibilité ni l’équilibrage. Salle obtenue en remplaçant la salle courante, sans parcourir l’expédition."
+  },
+  {
+   "id": "T4-myco",
+   "nom": "Boss myco : apparition, 30 s de combat simulé, phases, défaite",
+   "execute": true,
+   "resultat": "réussi",
+   "details": {
+    "apparu": {
+     "id": "myco",
+     "hp": 760,
+     "hpMax": 760,
+     "etat": "intro"
+    },
+    "etatsObserves": [
+     "combat"
+    ],
+    "attaquesObservees": [
+     "saut",
+     "spirale",
+     "spores",
+     "inspire"
+    ],
+    "phaseMax": 3,
+    "fin": {
+     "mort": true,
+     "scene": "donjon"
+    },
+    "erreurs": []
+   },
+   "limites": "Combat SIMULÉ : déplacements/attaques automatisés, soins forcés, serviteurs abattus puis PV du boss retirés par le test (via damageEnemy, sans contourner l’invulnérabilité) pour atteindre les phases puis la défaite. Vérifie l’absence d’erreur et le déroulement, PAS la difficulté, la lisibilité ni l’équilibrage. Salle obtenue en remplaçant la salle courante, sans parcourir l’expédition."
+  },
+  {
+   "id": "T4-abbesse",
+   "nom": "Boss abbesse : apparition, 30 s de combat simulé, phases, défaite",
+   "execute": true,
+   "resultat": "réussi",
+   "details": {
+    "apparu": {
+     "id": "abbesse",
+     "hp": 900,
+     "hpMax": 900,
+     "etat": "intro"
+    },
+    "etatsObserves": [
+     "combat"
+    ],
+    "attaquesObservees": [
+     "aspersion",
+     "procession",
+     "requiem"
+    ],
+    "phaseMax": 3,
+    "fin": {
+     "mort": true,
+     "scene": "donjon"
+    },
+    "erreurs": []
+   },
+   "limites": "Combat SIMULÉ : déplacements/attaques automatisés, soins forcés, serviteurs abattus puis PV du boss retirés par le test (via damageEnemy, sans contourner l’invulnérabilité) pour atteindre les phases puis la défaite. Vérifie l’absence d’erreur et le déroulement, PAS la difficulté, la lisibilité ni l’équilibrage. Salle obtenue en remplaçant la salle courante, sans parcourir l’expédition."
+  },
+  {
+   "id": "T4-eteignoir",
+   "nom": "Boss eteignoir : apparition, 30 s de combat simulé, phases, défaite",
+   "execute": true,
+   "resultat": "réussi",
+   "details": {
+    "apparu": {
+     "id": "eteignoir",
+     "hp": 1050,
+     "hpMax": 1050,
+     "etat": "intro"
+    },
+    "etatsObserves": [
+     "combat"
+    ],
+    "attaquesObservees": [
+     "fumee",
+     "rayon",
+     "eteindre",
+     "cloche"
+    ],
+    "phaseMax": 3,
+    "fin": {
+     "mort": true,
+     "scene": "donjon"
+    },
+    "erreurs": []
+   },
+   "limites": "Combat SIMULÉ : déplacements/attaques automatisés, soins forcés, serviteurs abattus puis PV du boss retirés par le test (via damageEnemy, sans contourner l’invulnérabilité) pour atteindre les phases puis la défaite. Vérifie l’absence d’erreur et le déroulement, PAS la difficulté, la lisibilité ni l’équilibrage. Salle obtenue en remplaçant la salle courante, sans parcourir l’expédition."
+  },
+  {
+   "id": "T4-engloutie",
+   "nom": "Boss engloutie : apparition, 30 s de combat simulé, phases, défaite",
+   "execute": true,
+   "resultat": "réussi",
+   "details": {
+    "apparu": {
+     "id": "engloutie",
+     "hp": 1350,
+     "hpMax": 1350,
+     "etat": "intro"
+    },
+    "etatsObserves": [
+     "combat"
+    ],
+    "attaquesObservees": [
+     "bulles",
+     "vague",
+     "engloutir"
+    ],
+    "phaseMax": 3,
+    "fin": {
+     "mort": true,
+     "scene": "donjon"
+    },
+    "erreurs": []
+   },
+   "limites": "Combat SIMULÉ : déplacements/attaques automatisés, soins forcés, serviteurs abattus puis PV du boss retirés par le test (via damageEnemy, sans contourner l’invulnérabilité) pour atteindre les phases puis la défaite. Vérifie l’absence d’erreur et le déroulement, PAS la difficulté, la lisibilité ni l’équilibrage. Salle obtenue en remplaçant la salle courante, sans parcourir l’expédition."
+  },
+  {
+   "id": "T4-justine",
+   "nom": "Boss justine : apparition, 30 s de combat simulé, phases, défaite",
+   "execute": true,
+   "resultat": "réussi",
+   "details": {
+    "apparu": {
+     "id": "justine",
+     "hp": 1900,
+     "hpMax": 1900,
+     "etat": "intro"
+    },
+    "etatsObserves": [
+     "combat"
+    ],
+    "attaquesObservees": [
+     "griffes",
+     "miroirs",
+     "fils",
+     "pluie"
+    ],
+    "phaseMax": 3,
+    "fin": {
+     "mort": true,
+     "scene": "donjon"
+    },
+    "erreurs": []
+   },
+   "limites": "Combat SIMULÉ : déplacements/attaques automatisés, soins forcés, serviteurs abattus puis PV du boss retirés par le test (via damageEnemy, sans contourner l’invulnérabilité) pour atteindre les phases puis la défaite. Vérifie l’absence d’erreur et le déroulement, PAS la difficulté, la lisibilité ni l’équilibrage. Salle obtenue en remplaçant la salle courante, sans parcourir l’expédition."
+  },
+  {
+   "id": "T5",
+   "nom": "Sauvegarde créée avec l’archive 8a67 chargée dans la v28",
+   "execute": true,
+   "resultat": "réussi",
+   "details": {
+    "sourceResume": {
+     "nom": "Test",
+     "classe": "mage",
+     "res": {
+      "bois": 74,
+      "pierre": 53,
+      "nourriture": 53,
+      "cristaux": 40,
+      "essence": 40,
+      "oboles": 60,
+      "devotion": 40
+     },
+     "adeptes": [
+      "Pépin"
+     ],
+     "batiments": 0,
+     "temps": 9.113330000000014,
+     "version": 3,
+     "enExpedition": true,
+     "eco": false
+    },
+    "apresChargement": {
+     "scene": "donjon",
+     "nom": "Test",
+     "classe": "mage",
+     "res": {
+      "bois": 74,
+      "pierre": 53,
+      "nourriture": 53,
+      "cristaux": 40,
+      "essence": 40,
+      "oboles": 60,
+      "devotion": 40
+     },
+     "adeptes": [
+      "Pépin"
+     ],
+     "batiments": 0,
+     "temps": 9.113330000000014,
+     "version": 3,
+     "enExpedition": true,
+     "eco": "absent"
+    },
+    "comparaison": {
+     "nom": true,
+     "classe": true,
+     "res": true,
+     "adeptes": true,
+     "batiments": true,
+     "temps": true,
+     "expedition": true
+    },
+    "importCodeTransfert": {
+     "ok": true,
+     "nom": null
+    },
+    "erreurs": {
+     "reference": [],
+     "v28": [],
+     "import": []
+    }
+   },
+   "limites": "Une seule sauvegarde synthétique (début de partie + 12 h simulées + expédition en cours). Ne couvre pas une sauvegarde de fin de jeu ni les vraies sauvegardes des joueurs, qui sont dans leur navigateur."
+  },
+  {
+   "id": "T6",
+   "nom": "Performance indicative : v28 contre 8a67, processeur ralenti ×4",
+   "execute": true,
+   "resultat": "réussi",
+   "details": {
+    "reference8a67": {
+     "images": 500,
+     "msMoyen": 29.7,
+     "p95": 50,
+     "plus33ms": 85
+    },
+    "v28": {
+     "images": 471,
+     "msMoyen": 31.1,
+     "p95": 50,
+     "plus33ms": 93
+    },
+    "ecartTempsImageMoyenPct": 4.7,
+    "seuilPropose": "5 % (non validé)"
+   },
+   "limites": "Chromium headless dans un conteneur, ralentissement CPU émulé ; une seule mesure de 15 s par version, salles non identiques (génération aléatoire). Indicatif seulement : ne remplace pas une mesure sur téléphone réel."
+  },
+  {
+   "id": "T7",
+   "nom": "Panneaux et fonctions existants (menus, forge, journal, adeptes…)",
+   "execute": true,
+   "resultat": "réussi",
+   "details": {
+    "panneaux": {
+     "openForge": {
+      "ouvert": true,
+      "erreurs": 0
+     },
+     "openEquipment": {
+      "ouvert": true,
+      "erreurs": 0
+     },
+     "openJournal": {
+      "ouvert": true,
+      "erreurs": 0
+     },
+     "openStats": {
+      "ouvert": true,
+      "erreurs": 0
+     },
+     "openGuide": {
+      "ouvert": true,
+      "erreurs": 0
+     },
+     "openSucces": {
+      "ouvert": true,
+      "erreurs": 0
+     },
+     "openKnightSheet": {
+      "ouvert": true,
+      "erreurs": 0
+     },
+     "openAdeptList": {
+      "ouvert": true,
+      "erreurs": 0
+     },
+     "openSlotsMenu": {
+      "ouvert": true,
+      "erreurs": 0
+     }
+    },
+    "simulation": {
+     "heuresSimulees": 48,
+     "erreurs": 0
+    },
+    "erreurs": []
+   },
+   "limites": "Vérifie l’ouverture des panneaux et 48 h de simulation sans erreur ; ne vérifie ni leur contenu ni leurs interactions détaillées."
+  }
+ ]
+}
