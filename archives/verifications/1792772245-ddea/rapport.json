@@ -1,0 +1,66 @@
+{
+ "fichier": "artifact-3544c795-1792772245-ddea.html",
+ "etapes": [
+  {
+   "nom": "ecran titre",
+   "ok": true
+  },
+  {
+   "nom": "sanctuaire",
+   "ok": true
+  },
+  {
+   "nom": "expedition foret",
+   "ok": true,
+   "info": {
+    "scene": "donjon"
+   }
+  },
+  {
+   "nom": "expedition catacombes",
+   "ok": true,
+   "info": {
+    "scene": "donjon"
+   }
+  },
+  {
+   "nom": "expedition fongique",
+   "ok": true,
+   "info": {
+    "scene": "donjon"
+   }
+  },
+  {
+   "nom": "expedition domaine",
+   "ok": true,
+   "info": {
+    "scene": "donjon"
+   }
+  },
+  {
+   "nom": "expedition lac",
+   "ok": true,
+   "info": {
+    "scene": "donjon"
+   }
+  },
+  {
+   "nom": "sauvegarde/rechargement",
+   "ok": true,
+   "info": {
+    "cles": [
+     "edf_parametres",
+     "edf_partie_1",
+     "edf_partie_1_secours"
+    ]
+   }
+  },
+  {
+   "nom": "export/import code de transfert",
+   "ok": true
+  }
+ ],
+ "erreursJS": [],
+ "erreursJeu": [],
+ "ok": true
+}
